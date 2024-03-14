@@ -5,12 +5,15 @@
     border: 10px solid;
     border-radius: 50%;
 
+
     transform: rotate(-90deg);
 }
 
 body{
     height: 100vh;
     margin: 0;
+
+    overflow: hidden;
 
     display: grid;
     place-items: center;
@@ -27,7 +30,7 @@ body{
 
 .hand{
     height: 40px;
-    border: 1px solid;
+    /*border: 1px solid;*/
 
 }
 
@@ -36,7 +39,7 @@ body{
 
 #sec{
     position: absolute;
-    background-color: rgba(0, 255, 255, 0.27);
+    /*background-color: rgba(0, 255, 255, 0.27);*/
     width: 280px;
 
     top: 260px;
@@ -69,23 +72,25 @@ body{
     font-size: 25px;
 }
 
+/* TWEAKING THE ROTATION OF THE NUMBERS */
+
 .sec-number{
-    transform: rotate(90deg); /* IMPORTANT - rotate each of the element in the hand */
+    transform: rotate(0deg);
 }
 
 .min-number{
-    transform: rotate(90deg); /* IMPORTANT - rotate each of the element in the hand */
+    transform: rotate(0deg);
 }
 
 .hour-number{
-    transform: rotate(90deg); /* IMPORTANT - rotate each of the element in the hand */
+    transform: rotate(0deg);
 }
 
 /* MINUTES */
 
 #min{
     position: absolute;
-    background-color: rgba(137, 43, 226, 0.284);
+    /*background-color: rgba(137, 43, 226, 0.284);*/
     width: 250px;
     top: 230px;
     left: 250px;
@@ -108,7 +113,7 @@ body{
 #hour{
     position: absolute;
 
-    background-color: rgba(210, 105, 30, 0.317);
+    /*background-color: rgba(210, 105, 30, 0.317);*/
 
     width: 180px;
 
@@ -127,4 +132,6 @@ body{
 
     transform: rotate(-90deg);
 }
+
+
 
