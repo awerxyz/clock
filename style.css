@@ -4,17 +4,13 @@
     height: 600px;
     border: 10px solid;
     border-radius: 50%;
-
-
     transform: rotate(-90deg);
 }
 
 body{
     height: 100vh;
     margin: 0;
-
     overflow: hidden;
-
     display: grid;
     place-items: center;
 }
@@ -22,46 +18,36 @@ body{
 .hand-holder{
     position: absolute;
     /*border: 2px solid;*/
-
     top: 0px;
     left: 10px;
-    
 }
 
 .hand{
     height: 40px;
     /*border: 1px solid;*/
-
 }
 
 /* SECONDS */
-
 
 #sec{
     position: absolute;
     /*background-color: rgba(0, 255, 255, 0.27);*/
     width: 280px;
-
     top: 260px;
     left: 280px;
 }
 
 #sec-hand-holder{
     position: absolute;
-
     width: 560px;
     height: 560px;
-
     top: 20px;
     left: 20px;
-
     transform: rotate(-90deg);
-
 }
 
 .sec-number-wrapper, .min-number-wrapper, .hour-number-wrapper{
     height: 40px;
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -70,20 +56,6 @@ body{
 .sec-number, .min-number, .hour-number{
     text-align: center;
     font-size: 25px;
-}
-
-/* TWEAKING THE ROTATION OF THE NUMBERS */
-
-.sec-number{
-    transform: rotate(0deg);
-}
-
-.min-number{
-    transform: rotate(0deg);
-}
-
-.hour-number{
-    transform: rotate(0deg);
 }
 
 /* MINUTES */
@@ -112,26 +84,57 @@ body{
 
 #hour{
     position: absolute;
-
     /*background-color: rgba(210, 105, 30, 0.317);*/
-
     width: 180px;
-
     top: 190px;
     left: 210px;
 }
 
 #hour-hand-holder{
     position: absolute;
-
     width: 420px;
     height: 420px;
-
     top: 90px;
     left: 90px;
-
     transform: rotate(-90deg);
 }
 
-
-
+@media screen and (max-width: 600px) {
+    .clock-border{
+        width: 350px;
+        height: 350px;
+    }
+    
+    #sec{
+        width: 165px;
+    }
+    
+    #sec-hand-holder{
+        width: 560px;
+        height: 560px;
+        top: -108px;
+        left: -106px;
+    }
+    
+    #min{
+        width: 130px;
+    }
+    
+    #min-hand-holder{
+        width: 500px;
+        height: 500px;
+        left: -76px;
+        top: -75px;
+    }
+    
+    #hour{
+        width: 100px;
+    }
+    
+    #hour-hand-holder{
+        width: 420px;
+        height: 420px;
+        top: -30px;
+        left: -36px;
+    }
+}
